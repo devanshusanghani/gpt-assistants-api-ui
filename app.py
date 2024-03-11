@@ -8,6 +8,10 @@ import streamlit as st
 import openai
 from openai.types.beta.threads import MessageContentImageFile
 from tools import TOOL_MAP
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 
 azure_openai_endpoint = os.environ.get("AZURE_OPENAI_ENDPOINT")
